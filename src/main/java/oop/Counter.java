@@ -34,6 +34,20 @@ public class Counter {
         System.out.println("Counter clicked! count = " + count);
     }
 
+    public void reset()
+    {
+        count = 0;
+        System.out.println("count has been reset, clicks = " + count);
+    }
+
+    public void undo()
+    {
+        if (count > 0) {
+            count = count - 1;
+        }
+        System.out.println("Counter reduced! count = " + count);
+    }
+
     //TODO
     // Implement reset() method to set the count to 0.
     // the value of this counter to 0.

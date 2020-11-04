@@ -24,5 +24,21 @@ public class AppTest
     }
 
     //TODO add a test for Counter undo()
+    @Test
+    public void undo()
+    {
+        Counter counter = new Counter();
+        counter.click();
+        counter.undo();
+        counter.undo();
+int expected= 0;
+        int actual = counter.getCount();
+        assertEquals(expected, actual);
+
+    }
+
+
+
+
 
 }

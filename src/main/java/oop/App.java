@@ -20,6 +20,8 @@ public class App
         myCounter.click();
         myCounter.click();
         myCounter.click();
+        myCounter.reset();
+        myCounter.undo();
 
         //TODO - add call to reset() that you implement in Counter class
 
